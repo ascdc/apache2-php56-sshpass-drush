@@ -2,7 +2,7 @@ FROM ascdc/apache2-php56-sshpass
 MAINTAINER ASCDC <asdc.sinica@gmail.com>
 
 ADD run.sh /run.sh
-ENV DRUSH_VERSION 8.1.2
+ENV DRUSH_VERSION 8.1.17
 ENV LANG zh_TW.UTF-8  
 ENV LANGUAGE zh_TW
 ENV LC_ALL zh_TW.UTF-8 
