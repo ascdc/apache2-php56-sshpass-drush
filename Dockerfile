@@ -17,7 +17,6 @@ RUN DEBIAN_FRONTEND=noninteractive && \
 	sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && \
 	sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config && \
 	sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config && \
-	echo "cd /app" >> /root/.profile && \
 	echo "alias ll='ls -al'" >> /root/.profile && \
 	apt-get install -y locales && \
 	locale-gen zh_TW.UTF-8 && \
