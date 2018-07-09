@@ -10,7 +10,7 @@ ENV LC_ALL zh_TW.UTF-8
 RUN DEBIAN_FRONTEND=noninteractive && \
 	chmod +x /*.sh && \
 	apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server pwgen vim wget curl screen sudo	
+	DEBIAN_FRONTEND=noninteractive apt-get -y install openssh-server pwgen vim wget curl screen sudo && \
 	curl -fsSL -o /usr/local/bin/drush "https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar" && \
 	chmod +x /usr/local/bin/drush && \
 	mkdir -p /var/run/sshd &&  \
